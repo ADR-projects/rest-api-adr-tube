@@ -1,0 +1,24 @@
+body {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+form, ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea, button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Minimal box-stacked look */
+li {
+    border: 1px solid #ccc;
+    padding: 12px;
+    list-style: none;
+    box-sizing: border-box;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Subscribers</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Subscribers of ADR-Tube</h1>
+    <a href="http://localhost:3000/"><h3>Dashboard...</h3></a>
+    <a href="http://localhost:3000/new"><h3>Add New...</h3></a>
+    <%=alert %>
+    <ul>
+        <% subscribers.forEach(sub=> {%>
+            <li>
+              <strong><%= sub.name %></strong><br>
+                <p><strong>ID:</strong> <%= sub._id %></p>
+                <p><strong>Birthday:</strong> <%= sub.bday.toDateString() %></p>
+                <p><strong>Bio:</strong> <%= sub.bio %></p>
+                <form action="/subscribers/delete/<%=sub._id %>" method="POST">
+                    <button type="submit">DELETE</button>
+                </form>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>

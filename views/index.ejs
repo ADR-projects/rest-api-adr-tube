@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADR-Tube</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <a href="http://localhost:3000/"><h3>Dashboard...</h3></a>
+     <a href="http://localhost:3000/subscribers"><h3>View Database...</h3></a> <br>
+    <h1>Hello! Let's get to know you.</h1>
+     <%=alert %>
+    <form action="/subscribers" method="POST">
+        <h2>Enter your name:</h2>
+        <input name="name" id="" placeholder="Sherlock Holmes" />
+        <h2>When is your birthday?</h2>
+        <input name="bday" type="date" id="" placeholder="Birthday?" />
+        <h2>Write a bio about yourself.</h2>
+        <textarea name="bio" id="" placeholder="Hi! I've joined ADR-Tube."></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>
